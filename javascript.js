@@ -1,5 +1,5 @@
 $(document).ready(function() {
   $("button").click(function() {
-    $("td").fadeOut("slow");
+    $("td").css("background-color", "#BC5AB3" )
   });
 });
