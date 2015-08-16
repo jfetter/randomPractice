@@ -17,9 +17,22 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <style type="text/css">
-      #space{padding-left: 12vw;}
+      .right{
+      margin: 25px;
+      font-size: 8px;
+      }
 
-      #outterCoumn{background-color: blue;
+      select{background-color:white;
+        }
+
+      .pricingInfo{
+        border-radius: 0;
+        padding: 5vw;
+        }
+
+      #outterCoulmn, .cartItem{
+          background-color: #4289c7;
+          background-url: http://api.thumbr.it/whitenoise-361x370.png?background=4ea8c9ff&noise=626262&density=61&opacity=15;
          padding-top: 10vw;
           padding-bottom: 10vw;
         }
@@ -47,25 +60,29 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10" id="outterCoumn">First Column
+                    <div class="col-sm-12" id="outterCoulmn">
                         <div class="row">
-                            <div class="col-md-3">
-                              <div class="well">
+                            <div class="col-sm-3">
+                              <div class="cartItem" >
                                 <div>Assorted Vegetables (1lb)<img class="img-responsive" src="http://mythrigroceries.com/wp-content/uploads/2015/01/Fresh-Indian-Vegetables.jpg"></div>
-                                    $1.00  <span id="space">   </span> QTY:
-                                    <a href="" class= "btn btn-success btn-block"> 
-                                   
-                                    <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart
-                                    </a> 
+                                    <div class="well pricingInfo">
+                                    <span>$1.00 </span> 
+                                      <div align="right"> <span class="small"> QTY:</span><select class="1-100"></select> 
+                                      </div> <!-- end right align -->
+                                      <div class="addToCart">
+                                     <a href="" class= "btn btn-success btn-block"> 
+                                    <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</a> 
+                                    </div> <!-- end addToCart -->
+                                    </div> <!--end pricingInfo -->
                                 </div> <!--end assorted vegetables -->
                              </div> <!-- end col-md-6 -->
                       
-                             <div class="col-md-3">
+                             <div class="col-sm-3">
                               <div class="well"><div class="item"  id="two"> Raspberries 1lb <img class="img-responsive" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcR6Ck1Y7f5XYKDkcSHbGVcH-rM3zHWqueOY7VwSoffGRhSY6HVC"></div>
                                 </div> <!--end rasperries -->
                              </div> <!-- end col-md-6 -->
 
-                              <div class="col-md-3">
+                              <div class="col-sm-3">
                               <div class="well"><div class="item"  id="three"> 1 Fresh Kiwi <img class="img-responsive" src="http://www.internetbillboards.net/wp-content/uploads/kiwifruit.jpg"></div></div>
                                 </div> <!--end rasperries -->
                              </div> <!-- end col-md-6 -->
@@ -93,6 +110,6 @@
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+<script src="localJS.js"></script>
 </body>	
 </html>
